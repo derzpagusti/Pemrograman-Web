@@ -1,11 +1,3 @@
-/* =========================================================
-   SIMPUS-Mini — style.css
-   Jobsheet 2: CSS3 Styling Basics
-   NOTE: theme colour changed from #1d5b8a (blue) to
-   #2e7d52 (dark green) for Exercise 10.4 #1.
-   ========================================================= */
-
-/* ===== Reset & Base ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,7 +20,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===== Header & Navbar (Flexbox) ===== */
 header {
     background-color: #2e7d52;
     color: #fff;
@@ -54,7 +45,6 @@ header nav a {
     font-weight: 500;
 }
 
-/* ===== Main Layout ===== */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -74,9 +64,6 @@ section h2 {
     color: #2e7d52;
 }
 
-/* ===== Statistic Cards (CSS Grid) =====
-   Exercise 10.4 #2: 4th card added ("Overdue Books"),
-   so the grid is now 4 columns instead of 3. */
 main section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -136,12 +123,6 @@ td button {
     font-size: 0.85rem;
 }
 
-/* Exercise 10.4 #3: a "Details" button was added between
-   Edit and Delete. Left as :first-of-type/:last-of-type
-   only, "Details" would sit in the middle with no
-   background colour at all (browser default grey), because
-   position-based selectors only catch the first and last
-   button, not one in between. A dedicated class fixes this. */
 td button:first-of-type {
     background-color: #f0ad4e;
     color: #fff;
@@ -157,7 +138,6 @@ td button.btn-details {
     color: #fff;
 }
 
-/* ===== Form ===== */
 form p {
     margin-bottom: 1rem;
 }
@@ -193,7 +173,6 @@ form button[type="submit"]:hover {
     background-color: #1f5c3d;
 }
 
-/* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 1.25rem;
